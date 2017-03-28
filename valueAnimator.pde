@@ -1,3 +1,5 @@
+// TODO: implement weight usage of transitions
+
 class ValueAnimator {
   private float startValue;
   private float endValue;
@@ -5,6 +7,7 @@ class ValueAnimator {
   private int duration;
   private int progress;
   private boolean isRun;
+  private weight = 0.5f; // weight (0f-1f) of duration from startValue to endValue
   private String  animationType;
   
   ValueAnimator (float start, float end) {
